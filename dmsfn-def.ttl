@@ -11,6 +11,12 @@ dmsfn-def:
   rdf:type owl:Ontology ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
+dmsfn-def:config
+  rdf:type rdfs:Class ;
+  rdfs:comment "Config module, keeps registry of dataMos modules and sends basic configuration info to modules" ;
+  rdfs:label "config" ;
+  rdfs:subClassOf rdfs:Class ;
+.
 dmsfn-def:enrichment
   rdf:type rdfs:Class ;
   rdfs:comment "Module belongs to the enrichment category of functions." ;
