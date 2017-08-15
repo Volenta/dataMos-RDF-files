@@ -12,9 +12,16 @@ dmsfn-def:
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 dmsfn-def:config
+  rdf:type dmsfn-def:core ;
   rdf:type rdfs:Class ;
   rdfs:comment "Config module, keeps registry of dataMos modules and sends basic configuration info to modules" ;
   rdfs:label "config" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dmsfn-def:core
+  rdf:type rdfs:Class ;
+  rdfs:comment "Core module type, for dataMos core modules" ;
+  rdfs:label "core" ;
   rdfs:subClassOf rdfs:Class ;
 .
 dmsfn-def:enrichment
@@ -45,6 +52,7 @@ dmsfn-def:module-type
   rdfs:label "module type" ;
 .
 dmsfn-def:prefix
+  rdf:type dmsfn-def:core ;
   rdf:type rdfs:Class ;
   rdfs:comment "Prefix module, maintains the register of prefixes and related namespaces, accross the dataMos platform" ;
   rdfs:label "prefix" ;
