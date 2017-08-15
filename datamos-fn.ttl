@@ -1,0 +1,43 @@
+# baseURI: http://ld.datamos.org/function/id/
+# prefix: datamos-fn
+
+@prefix datamos-fn: <http://ld.datamos.org/function/id/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+datamos-fn:
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+datamos-fn:de-register
+  rdf:type rdfs:Resource ;
+  rdfs:comment "About the removal of the module and it's functions form the global dataMos register." ;
+  rdfs:label "de-register" ;
+.
+datamos-fn:match-prefix
+  rdf:type rdfs:Resource ;
+  rdfs:comment "About matching prefixes and returning a map with prefix namespace, key value pairs" ;
+  rdfs:label "match prefix" ;
+.
+datamos-fn:prefix-list
+  rdf:type rdfs:Resource ;
+  rdfs:comment "About the list of prefixes, which are contained in the message" ;
+  rdfs:label "prefix list" ;
+.
+datamos-fn:registration
+  rdf:type rdfs:Resource ;
+  rdfs:comment "About the registration of a module and it's functions, so other modules can use it" ;
+  rdfs:label "registration" ;
+.
+datamos-fn:registry
+  rdf:type rdfs:Resource ;
+  rdfs:comment "About the registry, which is contained in the message" ;
+  rdfs:label "registry" ;
+.
+datamos-fn:retrieve-message
+  rdf:type rdfs:Resource ;
+  rdfs:comment "About retrieving the message from the store." ;
+  rdfs:label "retrieve message" ;
+.

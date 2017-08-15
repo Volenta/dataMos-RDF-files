@@ -1,0 +1,73 @@
+# baseURI: http://ld.datamos.org/data/def/
+# prefix: dms-def
+
+@prefix dms-def: <http://ld.datamos.org/data/def/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dms-def:
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+dms-def:function
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The module has the following function (Object). If unsure, use the dms-def:provides predicate instead." ;
+  rdfs:label "has function" ;
+.
+dms-def:idem-sender
+  rdf:type rdfs:Class ;
+  rdfs:comment "Placeholder to mark that recipient is identical to the sender. Us it to stop messages from looping" ;
+  rdfs:label "idem sender" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dms-def:message
+  rdf:type rdfs:Class ;
+  rdfs:comment "This message" ;
+  rdfs:label "message" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dms-def:message-id
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The unique id of a message" ;
+  rdfs:label "message id" ;
+.
+dms-def:module
+  rdf:type rdfs:Class ;
+  rdfs:comment "A dataMos software component, containing one or more functions, working with RDF data.	" ;
+  rdfs:label "module" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dms-def:provides
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The function provides by the module" ;
+  rdfs:label "provides" ;
+.
+dms-def:recipient
+  rdf:type rdfs:Class ;
+  rdfs:comment "Is the message recipient" ;
+  rdfs:label "recipient" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dms-def:requires
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The data the sender requires (eg. rdf object is the requested subject for the response message)" ;
+  rdfs:label "requires" ;
+.
+dms-def:sender
+  rdf:type rdfs:Class ;
+  rdfs:comment "Is the message sender" ;
+  rdfs:label "sender" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dms-def:subject
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The subject of a message" ;
+  rdfs:label "subject" ;
+.
+dms-def:transmit
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Describes a module involved in the message transmission" ;
+  rdfs:label "transmit" ;
+.

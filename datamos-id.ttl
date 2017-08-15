@@ -1,0 +1,14 @@
+# baseURI: http://ld.datamos.org/data/id/
+# prefix: datamos-id
+
+@prefix datamos-id: <http://ld.datamos.org/data/id/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+datamos-id:
+  rdf:type owl:Ontology ;
+  rdfs:comment "Contains instance data, related to the dataMos platform. Can contain temporary id's that will only be available in live environments" ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.

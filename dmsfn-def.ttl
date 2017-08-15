@@ -1,0 +1,40 @@
+# baseURI: http://ld.datamos.org/function/def/
+# prefix: dmsfn-def
+
+@prefix dmsfn-def: <http://ld.datamos.org/function/def/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dmsfn-def:
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+dmsfn-def:enrichment
+  rdf:type rdfs:Class ;
+  rdfs:comment "Module belongs to the enrichment category of functions." ;
+  rdfs:label "enrichment" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dmsfn-def:module
+  rdf:type rdfs:Class ;
+  rdfs:comment "Placeholder for a module" ;
+  rdfs:label "module" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dmsfn-def:module-id
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The unique id for one specific module" ;
+  rdfs:label "module id" ;
+.
+dmsfn-def:module-name
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The functtional name of the module" ;
+  rdfs:label "module name" ;
+.
+dmsfn-def:module-type
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The type of a module" ;
+  rdfs:label "module type" ;
+.
