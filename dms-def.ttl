@@ -16,6 +16,11 @@ dms-def:function
   rdfs:comment "The module has the following function (Object). If unsure, use the dms-def:provides predicate instead." ;
   rdfs:label "has function" ;
 .
+dms-def:has-prefixes
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "Contains the map of prefixes belonging to the message" ;
+  rdfs:label "has prefixes" ;
+.
 dms-def:idem-sender
   rdf:type rdfs:Class ;
   rdfs:comment "Placeholder to mark that recipient is identical to the sender. Us it to stop messages from looping" ;
