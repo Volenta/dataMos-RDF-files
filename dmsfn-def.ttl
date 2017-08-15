@@ -44,3 +44,9 @@ dmsfn-def:module-type
   rdfs:comment "The type of a module" ;
   rdfs:label "module type" ;
 .
+dmsfn-def:prefix
+  rdf:type rdfs:Class ;
+  rdfs:comment "Prefix module, maintains the register of prefixes and related namespaces, accross the dataMos platform" ;
+  rdfs:label "prefix" ;
+  rdfs:subClassOf rdfs:Class ;
+.
