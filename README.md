@@ -18,4 +18,4 @@ The RDF references for messaging predicates and terms. [dms-def.ttl](https://git
 The RDF placeholder for unique id's, like message id's. [datamos-id.ttl](https://github.com/Volenta/dataMos-RDF-files/blob/master/datamos-id.ttl)
 
 ##### - dmscfg-def.ttl
-The RDF reference for configuration items that are both used internally and in messages. [dmscfg-def.ttl] (https://github.com/Volenta/dataMos-RDF-files/blob/master/dmscfg-def.ttl)
+The RDF reference for configuration items that are both used internally and in messages. [dmscfg-def.ttl](https://github.com/Volenta/dataMos-RDF-files/blob/master/dmscfg-def.ttl)
