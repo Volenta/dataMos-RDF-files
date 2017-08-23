@@ -16,6 +16,11 @@ datamos-fn:de-register
   rdfs:comment "About the removal of the module and it's functions form the global dataMos register." ;
   rdfs:label "de-register" ;
 .
+datamos-fn:http-post
+  rdf:type rdfs:Resource ;
+  rdfs:comment "Use a http post request" ;
+  rdfs:label "http post" ;
+.
 datamos-fn:match-prefix
   rdf:type rdfs:Resource ;
   rdfs:comment "About matching prefixes and returning a map with prefix namespace, key value pairs" ;

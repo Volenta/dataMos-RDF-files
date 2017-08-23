@@ -30,6 +30,13 @@ dmsfn-def:enrichment
   rdfs:label "enrichment" ;
   rdfs:subClassOf rdfs:Class ;
 .
+dmsfn-def:http-connector
+  rdf:type dmsfn-def:core ;
+  rdf:type rdfs:Class ;
+  rdfs:comment "Connects http source to datamos" ;
+  rdfs:label "http connector" ;
+  rdfs:subClassOf rdfs:Class ;
+.
 dmsfn-def:module
   rdf:type rdfs:Class ;
   rdfs:comment "Placeholder for a module" ;
@@ -56,5 +63,12 @@ dmsfn-def:prefix
   rdf:type rdfs:Class ;
   rdfs:comment "Prefix module, maintains the register of prefixes and related namespaces, accross the dataMos platform" ;
   rdfs:label "prefix" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dmsfn-def:sparql-builder
+  rdf:type dmsfn-def:core ;
+  rdf:type rdfs:Class ;
+  rdfs:comment "Builds sparql queries based on supplied base graph patterns" ;
+  rdfs:label "sparql builder" ;
   rdfs:subClassOf rdfs:Class ;
 .
