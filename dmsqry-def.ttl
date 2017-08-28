@@ -1,0 +1,72 @@
+# baseURI: http://ld.datamos.org/query/def/
+# prefix: dmsqry-def
+
+@prefix dmsqry-def: <http://ld.datamos.org/query/def/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dmsqry-def:
+  rdf:type owl:Ontology ;
+  owl:versionInfo "Created with TopBraid Composer" ;
+.
+dmsqry-def:all
+  rdf:type rdfs:Class ;
+  rdfs:comment "All query variables are accepted. Equivalent of *" ;
+  rdfs:label "all" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dmsqry-def:distinct
+  rdf:type rdfs:Class ;
+  rdfs:comment "Only show distinct results" ;
+  rdfs:label "distinct" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dmsqry-def:has-clause
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Query has clause" ;
+  rdfs:label "has clause" ;
+.
+dmsqry-def:has-query-context-graph
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The query context graph is:" ;
+  rdfs:label "has query context graph" ;
+.
+dmsqry-def:has-query-graph
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "The graph which containts the actual query is:" ;
+  rdfs:label "has query graph" ;
+.
+dmsqry-def:has-solution-modifier
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Modify the solution with:" ;
+  rdfs:label "has solution modifier" ;
+.
+dmsqry-def:has-value
+  rdf:type owl:DatatypeProperty ;
+  rdfs:comment "The value to use is:" ;
+  rdfs:label "has value" ;
+.
+dmsqry-def:has-variable
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Query has variable" ;
+  rdfs:label "has variable" ;
+.
+dmsqry-def:limit
+  rdf:type rdfs:Class ;
+  rdfs:comment "Limiting the amount of records returned by a source" ;
+  rdfs:label "limit" ;
+  rdfs:subClassOf rdfs:Class ;
+.
+dmsqry-def:result-variable
+  rdf:type owl:ObjectProperty ;
+  rdfs:comment "Variable is part of the result" ;
+  rdfs:label "result variable" ;
+.
+dmsqry-def:select-query
+  rdf:type rdfs:Class ;
+  rdfs:comment "Query with select statement" ;
+  rdfs:label "select query" ;
+  rdfs:subClassOf rdfs:Class ;
+.
