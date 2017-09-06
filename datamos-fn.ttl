@@ -11,6 +11,11 @@ datamos-fn:
   rdf:type owl:Ontology ;
   owl:versionInfo "Created with TopBraid Composer" ;
 .
+datamos-fn:build-query
+  rdf:type rdfs:Resource ;
+  rdfs:comment "Build sparql query based on rdf data message" ;
+  rdfs:label "build query" ;
+.
 datamos-fn:de-register
   rdf:type rdfs:Resource ;
   rdfs:comment "About the removal of the module and it's functions form the global dataMos register." ;

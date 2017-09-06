@@ -12,10 +12,10 @@ dmsfn-def:
   owl:versionInfo "Created with TopBraid Composer" ;
 .
 dmsfn-def:config
-  rdf:type dmsfn-def:core ;
   rdf:type rdfs:Class ;
   rdfs:comment "Config module, keeps registry of dataMos modules and sends basic configuration info to modules" ;
   rdfs:label "config" ;
+  rdfs:subClassOf dmsfn-def:core ;
   rdfs:subClassOf rdfs:Class ;
 .
 dmsfn-def:core
@@ -30,11 +30,18 @@ dmsfn-def:enrichment
   rdfs:label "enrichment" ;
   rdfs:subClassOf rdfs:Class ;
 .
+dmsfn-def:gdi-access
+  rdf:type rdfs:Class ;
+  rdfs:comment "Access point to all graphical data interfaces" ;
+  rdfs:label "GDI access" ;
+  rdfs:subClassOf dmsfn-def:core ;
+  rdfs:subClassOf rdfs:Class ;
+.
 dmsfn-def:http-connector
-  rdf:type dmsfn-def:core ;
   rdf:type rdfs:Class ;
   rdfs:comment "Connects http source to datamos" ;
   rdfs:label "http connector" ;
+  rdfs:subClassOf dmsfn-def:core ;
   rdfs:subClassOf rdfs:Class ;
 .
 dmsfn-def:module
@@ -59,16 +66,16 @@ dmsfn-def:module-type
   rdfs:label "module type" ;
 .
 dmsfn-def:prefix
-  rdf:type dmsfn-def:core ;
   rdf:type rdfs:Class ;
   rdfs:comment "Prefix module, maintains the register of prefixes and related namespaces, accross the dataMos platform" ;
   rdfs:label "prefix" ;
+  rdfs:subClassOf dmsfn-def:core ;
   rdfs:subClassOf rdfs:Class ;
 .
 dmsfn-def:sparql-builder
-  rdf:type dmsfn-def:core ;
   rdf:type rdfs:Class ;
   rdfs:comment "Builds sparql queries based on supplied base graph patterns" ;
   rdfs:label "sparql builder" ;
+  rdfs:subClassOf dmsfn-def:core ;
   rdfs:subClassOf rdfs:Class ;
 .
